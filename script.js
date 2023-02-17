@@ -37,7 +37,7 @@ function parseFormula(){
   var formula = document.getElementById("myFormula").value;
   const mass = calculateGramFormulaMass(formula);
   var grams = document.getElementById("givenMass").value;
-  var moles = grams/gfm;
+  var moles = grams/mass;
   var out = (Math.round(100*moles)/100)+" moles";
   
   document.getElementById("output").innerHTML = out;
