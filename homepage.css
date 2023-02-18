@@ -1,0 +1,30 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+	50%{
+		background-position: 100% 50%;
+	}
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+body{
+    -webkit-text-fill-color: whitesmoke;
+    font-family: 'TwCenMTStd';
+    background: linear-gradient(45deg, #b1fc03, #09ff00,  #00ff2f, #0b03fc, #ff00d4, #ff0037);
+    background-size: 250% 250%;
+    animation: gradient 7s ease infinite;
+}
+
+@font-face {
+    font-family: TwCenMTStd;
+    src: url(twcenmt.TTF);
+}
+
+#middle-text{
+    padding:40vh;
+}
+
+
